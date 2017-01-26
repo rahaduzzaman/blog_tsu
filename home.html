@@ -14,7 +14,7 @@
 		<!-- Bootstrap Core CSS -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<!-- Custom CSS -->
 		<link rel="stylesheet" href="css/app.css" >
 		<link rel="stylesheet" href="css/home.css">
@@ -59,15 +59,21 @@
 
 					<ul class="nav navbar-nav navbar-right">
 
-						<li class="search m-r-sm">
-							
+						<li class="search ">
+							<form action="" class="search-form">
+							    <div class="form-group has-feedback">
+									<label for="search" class="sr-only">Search</label>
+									<input type="text" class="form-control" name="search" id="search" placeholder="search">
+							  		<i class="fa fa-search"></i>
+								</div>
+							</form>
 						</li>
 
 						<li class="m-r-sm">
-							<a class="btn btn-default btn-mod" href="#">Write Story</a>
+							<a class="btn btn-mod" href="#">Write Story</a>
 						</li>
 						<li>
-							<a class="btn btn-default btn-mod sign" href="#">Sign in / Sign up</a>
+							<a class="btn btn-mod" href="#">Sign in / Sign up</a>
 						</li>
 
 					</ul>
@@ -78,12 +84,12 @@
 		</nav>
 
 		<!-- Page Content -->
-		<div class="container-fluid">
+		<div class="container">
 
 			<div class="row">
 
 				<!-- Blog Entries Column -->
-				<div class="col-md-6 col-md-offset-1 ">
+				<div class="col-md-6">
 					<!-- First Blog Post -->
 					<div id="post" class="post">
 						<div class="media p-b-sm">
